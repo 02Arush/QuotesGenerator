@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 const userName = process.env.MONGO_DB_USERNAME;
 const password = process.env.MONGO_DB_PASSWORD;
+const fetch = require("fetch");
 
 let appUser;
 let appPass;
