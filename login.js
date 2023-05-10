@@ -33,12 +33,7 @@ const options = {
 
 process.stdin.setEncoding("utf8");
 
-if (process.argv.length != 3) {
-  process.stdout.write("Usage login.js portNumber");
-  process.exit(1);
-}
-
-const portNumber = process.argv[2];
+const portNumber = 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set("views", path.resolve(__dirname, "templates"));
