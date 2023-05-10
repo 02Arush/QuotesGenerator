@@ -15,3 +15,6 @@ https://rapidapi.com/martin.svoboda/api/quotes15/
 Styles
 https://materializeweb.com/about.html
 
+HOSTED AT: 
+https://quotesgenerator.cyclic.app/ 
+
