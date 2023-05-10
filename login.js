@@ -104,7 +104,6 @@ app.get("/loggedIn/genQuotes", async (request, response) => {
     } catch (error) {
         console.error(error);
     }
-    
 })
 
 const prompt = `Web server started and running at http://localhost:${portNumber}\nStop to shutdown the server:`;
