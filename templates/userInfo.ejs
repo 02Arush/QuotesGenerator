@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ApplicationData</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.0-alpha/dist/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.0-alpha/dist/js/materialize.min.js"></script>
+  </head>
+
+  <body class = "indigo darken-2" style="color: white">
+    <div class="container">
+      <h1>User Created</h1>
+      <div>
+        <strong>Name: </strong><%- name %><br />
+        <strong>Email Address: </strong><%- email %><br />
+        <strong>Password: </strong>Hidden<br />
+
+        <hr />
+        <hr />
+
+        <a class = "btn orange darken-2" href="http://localhost:<%- port %>"><span style="color:black">Home</span></a>
+      </div>
+    </div>
+  </body>
+</html>

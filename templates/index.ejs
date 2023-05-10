@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.0-alpha/dist/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.0-alpha/dist/js/materialize.min.js"></script>
+  </head>
+
+  <body class="indigo darken-2" style="color: white">
+    <div class="container">
+      <h4>Welcome to Quotes Generator</h4>
+      <div>
+        <h3>Login</h3>
+
+        <form action="http://localhost:<%- port %>/loggedIn" method="post">
+          <div class="card indigo">
+            <div class="card-content">
+              <label
+                ><strong
+                  ><p style="color: white; font-size: 1.2rem">
+                    Username:
+                  </p></strong
+                >
+                <input type="text" name="username"
+              /></label>
+              <br />
+              <br />
+              <label
+                ><strong
+                  ><p style="color: white; font-size: 1.2rem">
+                    Password:
+                  </p></strong
+                >
+                <input type="password" name="password"
+              /></label>
+              <br />
+              <br />
+            </div>
+          </div>
+          <br />
+          <input
+            class="btn waves-effect waves-light orange lighten-1"
+            style="color: black"
+            type="submit"
+            value="Sign In"
+          />
+        </form>
+        <br />
+        <a class="btn-small orange lighten-1" href="/createAccount"
+          ><span style="color: black">Create Account</span></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

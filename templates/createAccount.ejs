@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Account</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.0-alpha/dist/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.0-alpha/dist/js/materialize.min.js"></script>
+  </head>
+
+  <body class="indigo darken-2" style="color: white">
+    <div class="container">
+      <h1>Create Account</h1>
+      <form
+        onsubmit="return confirm('Confirm registering your account?');"
+        action="http://localhost:<%- port %>/userInfo"
+        method="post"
+      >
+        <div class="card indigo">
+          <div class="card-content">
+            <label
+              ><strong><span style="color: white">Username:</span></strong>
+              <input
+                required
+                type="text"
+                name="username"
+                placeholder="Username"
+            /></label>
+            <br />
+            <br />
+            <label
+              ><strong><span style="color: white">Email Address:</span></strong>
+              <input
+                required
+                type="email"
+                name="email"
+                placeholder="example@notreal.notreal"
+            /></label>
+            <br /><br />
+            <label
+              ><strong><span style="color: white">Password:</span></strong>
+              <input
+                required
+                type="password"
+                name="pass"
+                placeholder="Password"
+            /></label>
+            <br />
+            <br />
+          </div>
+        </div>
+        <br />
+        <input
+          class="btn orange darken-2"
+          style="color: black"
+          type="submit"
+          value="Create Account"
+        />
+        <br />
+        <br />
+      </form>
+      <a class="btn orange darken-2" href="/"
+        ><span style="color: black">Home</span></a
+      >
+    </div>
+  </body>
+</html>
