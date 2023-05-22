@@ -1,9 +1,9 @@
 # QuotesGenerator
 
 Team Members:
-Arush Kumar (117985245)
-Ojas Malghan (117896060)
-Tejas Chandakkar (118098999)
+Arush Kumar 
+Ojas Malghan
+Tejas Chandakkar 
 
 App Description:
 Login UI/Register UI
